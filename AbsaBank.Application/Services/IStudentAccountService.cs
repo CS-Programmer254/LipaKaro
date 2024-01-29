@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AbsaBankMicroservice.Application.Commands;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace AbsaBankMicroservice.Application.Services
     public interface IStudentAccountService
     {
 
-       Task<Guid> CreateStudentAccountAsync();
+      Task<Guid> CreateStudentAccountAsync(CreateStudentAccountCommand createStudentAccountCommand);
     }
 
 }

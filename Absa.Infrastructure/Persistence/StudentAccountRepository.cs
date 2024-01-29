@@ -1,5 +1,5 @@
-﻿using AbsaBankMicroservice.Domian.Entities;
-using AbsaBankMicroservice.Domian.Repositories;
+﻿using AbsaBankMicroservice.Domain.Entities;
+using AbsaBankMicroservice.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

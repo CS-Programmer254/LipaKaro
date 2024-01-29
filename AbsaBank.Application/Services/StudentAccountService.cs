@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AbsaBankMicroservice.Application.Commands;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,17 @@ namespace AbsaBankMicroservice.Application.Services
 {
     public class StudentAccountService:IStudentAccountService
     {
-        public StudentAccountService() { }
+        private readonly IStudentAccountService _studentAccountService;
+        public StudentAccountService(IStudentAccountService studentAccountService) {
+            _studentAccountService = studentAccountService??
+                throw new ArgumentNullException(nameof(studentAccountService));
+        }
 
-        Task<Guid> IStudentAccountService.CreateStudentAccountAsync()
+       public async Task<Guid> CreateStudentAccountAsync(CreateStudentAccountCommand createStudentAccountCommand )
         {
             throw new NotImplementedException();
         }
+
+      
     }
 }

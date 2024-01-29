@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbsaBankMicroservice.Domian.Entities
+namespace AbsaBankMicroservice.Domain.Entities
 {
     public class TransactionStatus
     {

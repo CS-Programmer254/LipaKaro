@@ -1,4 +1,4 @@
-﻿using AbsaBankMicroservice.Domian.Entities;
+﻿using AbsaBankMicroservice.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
