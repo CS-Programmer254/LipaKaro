@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LipaKaro", "LipaKaro\LipaKaro.csproj", "{2363A851-A3B0-459E-9D6E-40E0BBC8F825}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LipaKaro", "LipaKaro\LipaKaro.csproj", "{2363A851-A3B0-459E-9D6E-40E0BBC8F825}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{CB0B0526-6BF2-4D35-9CE2-B1B14744BA19}"
 EndProject
@@ -23,15 +23,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MasenoUniversity", "MasenoU
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FEE98702-92A0-45A5-95EF-95370956C8D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsaBankMicoservice.API", "AbsaBankMicoservice.API\AbsaBankMicoservice.API.csproj", "{23CE0A32-6FB7-48CF-8D34-0C01544D03FE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsaBankMicroservice.Application", "AbsaBankMicroservice.Application\AbsaBankMicroservice.Application.csproj", "{30FD94AF-5EDA-49DD-B0FE-336DA478EE62}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsaBankMicroservice.Domian", "AbsaBankMicroservice.Domian\AbsaBankMicroservice.Domian.csproj", "{6E240A9F-92FE-47EB-86CB-225CE73ACD74}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsaBankMicroservice.Infrastructure", "AbsaBankMicroservice.Infrastructure\AbsaBankMicroservice.Infrastructure.csproj", "{9320C165-ED62-4C14-AD64-53FF9F6018A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbsaBankMicoservice.API", "AbsaBankMicoservice.API\AbsaBankMicoservice.API.csproj", "{23CE0A32-6FB7-48CF-8D34-0C01544D03FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Alerts", "Alerts", "{0CB95E42-3299-4E07-BCA9-D0634A03F70F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsaBankMicroservice.Domain", "AbsaBank.Domain\AbsaBankMicroservice.Domain.csproj", "{D664E9A2-0AC2-4380-B3EB-E26DF552B598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsaBankMicroservice.Application", "AbsaBank.Application\AbsaBankMicroservice.Application.csproj", "{66F5750F-A61B-4802-984F-A8B4B886EAA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsaMicroservice.Infrastructure", "Absa.Infrastructure\AbsaMicroservice.Infrastructure.csproj", "{62056B4D-9BD5-40A6-87EF-3C7FDCF9A206}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,18 +47,18 @@ Global
 		{23CE0A32-6FB7-48CF-8D34-0C01544D03FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23CE0A32-6FB7-48CF-8D34-0C01544D03FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23CE0A32-6FB7-48CF-8D34-0C01544D03FE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{30FD94AF-5EDA-49DD-B0FE-336DA478EE62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30FD94AF-5EDA-49DD-B0FE-336DA478EE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30FD94AF-5EDA-49DD-B0FE-336DA478EE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{30FD94AF-5EDA-49DD-B0FE-336DA478EE62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6E240A9F-92FE-47EB-86CB-225CE73ACD74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E240A9F-92FE-47EB-86CB-225CE73ACD74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E240A9F-92FE-47EB-86CB-225CE73ACD74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E240A9F-92FE-47EB-86CB-225CE73ACD74}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9320C165-ED62-4C14-AD64-53FF9F6018A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9320C165-ED62-4C14-AD64-53FF9F6018A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9320C165-ED62-4C14-AD64-53FF9F6018A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9320C165-ED62-4C14-AD64-53FF9F6018A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D664E9A2-0AC2-4380-B3EB-E26DF552B598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D664E9A2-0AC2-4380-B3EB-E26DF552B598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D664E9A2-0AC2-4380-B3EB-E26DF552B598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D664E9A2-0AC2-4380-B3EB-E26DF552B598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F5750F-A61B-4802-984F-A8B4B886EAA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F5750F-A61B-4802-984F-A8B4B886EAA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F5750F-A61B-4802-984F-A8B4B886EAA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F5750F-A61B-4802-984F-A8B4B886EAA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62056B4D-9BD5-40A6-87EF-3C7FDCF9A206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62056B4D-9BD5-40A6-87EF-3C7FDCF9A206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62056B4D-9BD5-40A6-87EF-3C7FDCF9A206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62056B4D-9BD5-40A6-87EF-3C7FDCF9A206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,10 +70,10 @@ Global
 		{BB4EBAE5-0D09-4175-B2FD-E6ED2A6D9FB9} = {89201FD1-ECC5-4039-9A0F-D07A4F63EA77}
 		{FEE98702-92A0-45A5-95EF-95370956C8D4} = {5EB7789A-E85D-46E3-9492-919B23F5DCDC}
 		{23CE0A32-6FB7-48CF-8D34-0C01544D03FE} = {5EB7789A-E85D-46E3-9492-919B23F5DCDC}
-		{30FD94AF-5EDA-49DD-B0FE-336DA478EE62} = {5EB7789A-E85D-46E3-9492-919B23F5DCDC}
-		{6E240A9F-92FE-47EB-86CB-225CE73ACD74} = {5EB7789A-E85D-46E3-9492-919B23F5DCDC}
-		{9320C165-ED62-4C14-AD64-53FF9F6018A7} = {5EB7789A-E85D-46E3-9492-919B23F5DCDC}
 		{0CB95E42-3299-4E07-BCA9-D0634A03F70F} = {89201FD1-ECC5-4039-9A0F-D07A4F63EA77}
+		{D664E9A2-0AC2-4380-B3EB-E26DF552B598} = {5EB7789A-E85D-46E3-9492-919B23F5DCDC}
+		{66F5750F-A61B-4802-984F-A8B4B886EAA9} = {5EB7789A-E85D-46E3-9492-919B23F5DCDC}
+		{62056B4D-9BD5-40A6-87EF-3C7FDCF9A206} = {5EB7789A-E85D-46E3-9492-919B23F5DCDC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BEE0CF68-336C-4A43-B73B-A4B74C8F0D5C}
