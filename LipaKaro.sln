@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsaBankMicroservice.Applic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsaMicroservice.Infrastructure", "Absa.Infrastructure\AbsaMicroservice.Infrastructure.csproj", "{62056B4D-9BD5-40A6-87EF-3C7FDCF9A206}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helb", "Helb\Helb.csproj", "{A08BF2E6-8B9C-4960-97F8-72BF15C564B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{62056B4D-9BD5-40A6-87EF-3C7FDCF9A206}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62056B4D-9BD5-40A6-87EF-3C7FDCF9A206}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62056B4D-9BD5-40A6-87EF-3C7FDCF9A206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A08BF2E6-8B9C-4960-97F8-72BF15C564B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08BF2E6-8B9C-4960-97F8-72BF15C564B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08BF2E6-8B9C-4960-97F8-72BF15C564B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08BF2E6-8B9C-4960-97F8-72BF15C564B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{D664E9A2-0AC2-4380-B3EB-E26DF552B598} = {5EB7789A-E85D-46E3-9492-919B23F5DCDC}
 		{66F5750F-A61B-4802-984F-A8B4B886EAA9} = {5EB7789A-E85D-46E3-9492-919B23F5DCDC}
 		{62056B4D-9BD5-40A6-87EF-3C7FDCF9A206} = {5EB7789A-E85D-46E3-9492-919B23F5DCDC}
+		{A08BF2E6-8B9C-4960-97F8-72BF15C564B4} = {89201FD1-ECC5-4039-9A0F-D07A4F63EA77}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BEE0CF68-336C-4A43-B73B-A4B74C8F0D5C}
