@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AbsaBank.Domain\AbsaBankMicroservice.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
