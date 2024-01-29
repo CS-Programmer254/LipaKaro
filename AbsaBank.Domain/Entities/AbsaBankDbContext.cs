@@ -11,11 +11,11 @@ namespace AbsaBankMicroservice.Domain.Entities
 {
     public class AbsaBankDbContext:DbContext
     {
-		public DbSet<AccountNumbers>BankAccounts { get; set; }	
+		//public DbSet<AccountNumbers>BankAccounts { get; set; }	
 		public DbSet<StudentAccount>StudentAccounts { get; set; }	
-		public DbSet<StudentAccountStatus> StudentAccountStatus { get; set; }	
-		public DbSet<MoneyTransfer>MoneyTransfer{ get; set; }	
-		public DbSet<TransactionStatus> TransactionStatus { get; set; }
+		//public DbSet<StudentAccountStatus> StudentAccountStatus { get; set; }	
+		//public DbSet<MoneyTransfer>MoneyTransfer{ get; set; }	
+		//public DbSet<TransactionStatus> TransactionStatus { get; set; }
 
 
         public AbsaBankDbContext(DbContextOptions<AbsaBankDbContext>options):base(options)

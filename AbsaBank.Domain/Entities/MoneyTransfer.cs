@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace AbsaBankMicroservice.Domain.Entities
 {
     public class MoneyTransfer
     {
+        [Key]
         public Guid TransactionId{ get; set; }
         public string CreditAccount { get; set; }
         public string DebitAccount { get; set; }

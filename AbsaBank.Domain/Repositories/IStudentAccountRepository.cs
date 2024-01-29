@@ -9,6 +9,6 @@ namespace AbsaBankMicroservice.Domain.Repositories
 {
     public interface IStudentAccountRepository
     {
-        Task <bool> SaveStudentAsync(StudentAccount student);
+        Task <bool> SaveStudentAccountAsync(StudentAccount student);
     }
 }

@@ -1,4 +1,6 @@
 ﻿using AbsaBankMicroservice.Application.Commands;
+using AbsaBankMicroservice.Domain.Entities;
+using AbsaBankMicroservice.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,15 +11,42 @@ namespace AbsaBankMicroservice.Application.Services
 {
     public class StudentAccountService:IStudentAccountService
     {
-        private readonly IStudentAccountService _studentAccountService;
-        public StudentAccountService(IStudentAccountService studentAccountService) {
-            _studentAccountService = studentAccountService??
-                throw new ArgumentNullException(nameof(studentAccountService));
+        private readonly IStudentAccountRepository _studentAccountRepository;
+        public StudentAccountService(IStudentAccountRepository studentRepository) {
+
+            _studentAccountRepository = studentRepository;
+        
         }
 
-       public async Task<Guid> CreateStudentAccountAsync(CreateStudentAccountCommand createStudentAccountCommand )
+       public async Task<Guid> CreateStudentAccountAsync(CreateStudentAccountCommand studentAccountCommand )
         {
-            throw new NotImplementedException();
+            try
+            {
+      
+                var newStudentAccount = StudentAccount.
+                    AddNewStudentAccount(
+                    studentAccountCommand.StudentAccountDetails.FirstName,
+                    studentAccountCommand.StudentAccountDetails.MiddleName,
+                    studentAccountCommand.StudentAccountDetails.LastName,
+                    studentAccountCommand.StudentAccountDetails.AdmissionNumber,
+                    studentAccountCommand.StudentAccountDetails.Email,
+                    studentAccountCommand.StudentAccountDetails.PhoneNumber,
+                    studentAccountCommand.StudentAccountDetails.NationalIDNumber,
+                    studentAccountCommand.StudentAccountDetails.KraPin,
+                    studentAccountCommand.StudentAccountDetails.Cif,
+                    studentAccountCommand.StudentAccountDetails.CustomerStatus, 
+                    studentAccountCommand.StudentAccountDetails.DateOfBirth
+                    );
+                await _studentAccountRepository.SaveStudentAccountAsync( newStudentAccount );
+                return newStudentAccount.StudentId;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
 
       

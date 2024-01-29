@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AbsaBankMicroservice.Application.Commands;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,6 +10,11 @@ namespace AbsaBankMicroservice.API.Controllers
     [ApiController]
     public class StudentAccountController : ControllerBase
     {
+        private readonly IMediator _mediator;
+        public StudentAccountController(IMediator mediator)
+        {
+            _mediator =mediator?? throw new ArgumentNullException(nameof(mediator));    
+        }
         // GET: api/<StudentAccountController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -24,8 +31,17 @@ namespace AbsaBankMicroservice.API.Controllers
 
         // POST api/<StudentAccountController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<Guid> CreateStudentAccount([FromBody] CreateStudentAccountCommand command)
         {
+            try
+            {
+                return await _mediator.Send(command);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         // PUT api/<StudentAccountController>/5

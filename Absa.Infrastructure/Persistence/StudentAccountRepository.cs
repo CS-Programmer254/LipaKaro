@@ -10,11 +10,28 @@ namespace AbsaBankMicroservice.Infrastructure.Persistence
 {
     public class StudentAccountRepository : IStudentAccountRepository
     {
-        private readonly
-        
-        Task<bool>SaveStudentAsync(StudentAccount student)
+        private readonly AbsaBankDbContext _dbContext;
+        public StudentAccountRepository(AbsaBankDbContext absaBankDbContext)
         {
-            throw new NotImplementedException();
+            _dbContext = absaBankDbContext?? throw new ArgumentNullException(nameof(absaBankDbContext));
+            
         }
+
+       public async Task<bool>SaveStudentAccountAsync(StudentAccount student)
+        {
+            try
+            {
+                await _dbContext.StudentAccounts.AddAsync(student);
+                await _dbContext.SaveChangesAsync();
+                return true;
+
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+        }
+
     }
 }

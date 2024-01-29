@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace AbsaBankMicroservice.Domain.Entities
 {
     public class StudentAccount
     {
+        [Key]
         public Guid StudentId { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
@@ -27,6 +29,7 @@ namespace AbsaBankMicroservice.Domain.Entities
         }
         public StudentAccount(string firstName, string middleName,string lastName, string admissionNumber, string email, string phoneNumber, string nationalIDNumber, string kraPin, string cif,Guid customerStatus,DateTime dateOfBirth)
         {
+            StudentId=Guid.NewGuid();
             FirstName = firstName;
             MiddleName = middleName;
             LastName = lastName;
