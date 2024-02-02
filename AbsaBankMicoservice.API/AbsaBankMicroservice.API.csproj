@@ -20,10 +20,4 @@
     <Folder Include="BrokerConfigurations\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Absa.Infrastructure\AbsaMicroservice.Infrastructure.csproj" />
-    <ProjectReference Include="..\AbsaBank.Application\AbsaBankMicroservice.Application.csproj" />
-    <ProjectReference Include="..\AbsaBank.Domain\AbsaBankMicroservice.Domain.csproj" />
-  </ItemGroup>
-
 </Project>
