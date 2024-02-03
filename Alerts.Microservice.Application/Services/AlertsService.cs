@@ -60,7 +60,7 @@ namespace Alerts.Microservice.Application.Services
                 var builder = new BodyBuilder();
 
                 builder.HtmlBody = emailCommand.email.Message;
-                message.Body = email.EmailMessageBody;
+                message.Body = email.TextBody;
                 using var smtp = new MailKit.Net.Smtp.SmtpClient();
                 smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
                 smtp.Authenticate(_mailSettings.Mail, _mailSettings.Password);

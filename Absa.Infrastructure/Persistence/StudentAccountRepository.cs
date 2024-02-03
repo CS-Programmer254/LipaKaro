@@ -1,8 +1,10 @@
 ﻿using AbsaBankMicroservice.Domain.Entities;
 using AbsaBankMicroservice.Domain.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,5 +35,26 @@ namespace AbsaBankMicroservice.Infrastructure.Persistence
             }
         }
 
+        public async Task<Guid>DeleteStudentAccountByIdAsync(Guid StudentId)
+        {
+            try
+            {
+                var student = await _dbContext.StudentAccounts.FirstOrDefaultAsync(s => s.StudentId == StudentId);
+                if (student is not null)
+                {
+                   _dbContext.StudentAccounts.Remove(student);
+                    await _dbContext.SaveChangesAsync();
+               
+                }
+                return student.StudentId;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+  
+        }
     }
 }

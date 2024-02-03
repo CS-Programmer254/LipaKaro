@@ -11,6 +11,7 @@ namespace AbsaBankMicroservice.Application.Services
     {
 
       Task<Guid> CreateStudentAccountAsync(CreateStudentAccountCommand createStudentAccountCommand);
+      Task<Guid> DeleteStudentAccountAsync(DeleteStudentAccountCommand deleteStudentAccountCommand);
     }
 
 }

@@ -32,6 +32,7 @@ namespace AbsaBankMicroservice.Domain.Entities
             }
 			catch (Exception)
 			{
+                
 
 				throw;
 			}

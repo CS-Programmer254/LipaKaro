@@ -10,5 +10,7 @@ namespace AbsaBankMicroservice.Domain.Repositories
     public interface IStudentAccountRepository
     {
         Task <bool> SaveStudentAccountAsync(StudentAccount student);
+        Task <Guid> DeleteStudentAccountByIdAsync(Guid StudentId);
+        
     }
 }

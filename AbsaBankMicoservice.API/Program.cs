@@ -1,5 +1,6 @@
 
 using AbsaBankMicroservice.Application.Commands;
+using MediatR;
 using AbsaBankMicroservice.Application.Services;
 using AbsaBankMicroservice.Domain.Entities;
 using AbsaBankMicroservice.Domain.Repositories;
@@ -8,20 +9,17 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("AbsaCoreBanking");
-builder.Services.AddDbContext<AbsaBankDbContext>(options =>
-options.UseSqlServer(connectionString));
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<AbsaBankDbContext>(options=>options.UseSqlServer(connectionString));
 
 builder.Services.AddScoped<IStudentAccountService,StudentAccountService>();
 builder.Services.AddScoped<IStudentAccountRepository,StudentAccountRepository>();
-builder.Services
-    .AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining(typeof(CreateStudentAccountCommandHandler)));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining(typeof(CreateStudentAccountCommandHandler)));
 
 var app = builder.Build();
 

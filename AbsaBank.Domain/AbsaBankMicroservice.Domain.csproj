@@ -20,8 +20,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Alerts.Microservice.Domain\Alerts.Microservice.Domain.csproj" />
-  </ItemGroup>
-
 </Project>

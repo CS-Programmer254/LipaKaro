@@ -49,6 +49,19 @@ namespace AbsaBankMicroservice.Application.Services
             
         }
 
-      
+        public async Task<Guid> DeleteStudentAccountAsync(DeleteStudentAccountCommand deleteStudentAccountCommand)
+        {
+            try
+            {
+                return await _studentAccountRepository.DeleteStudentAccountByIdAsync(deleteStudentAccountCommand.
+                    deleteStudentAccountDto.StudentId);
+  
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }
