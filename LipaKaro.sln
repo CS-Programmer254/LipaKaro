@@ -35,13 +35,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helb", "Helb", "{2A823AC0-6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CRB", "CRB", "{FC7970CD-AF6F-47EC-AE34-98E3DA92DD01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alerts.Microservice.API", "Alerts.Mcroservice.API\Alerts.Microservice.API.csproj", "{D4D765D1-958A-4946-96A4-78B9E2017318}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alerts.Microservice.API", "Alerts.Mcroservice.API\Alerts.Microservice.API.csproj", "{D4D765D1-958A-4946-96A4-78B9E2017318}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alerts.Microservice.Infrastructure", "Alerts.Microservice.Infrastructure\Alerts.Microservice.Infrastructure.csproj", "{6C679DFD-76F6-423C-9446-CADFA8C4944B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alerts.Microservice.Infrastructure", "Alerts.Microservice.Infrastructure\Alerts.Microservice.Infrastructure.csproj", "{6C679DFD-76F6-423C-9446-CADFA8C4944B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alerts.Microservice.Application", "Alerts.Microservice.Application\Alerts.Microservice.Application.csproj", "{660D09EE-4133-4357-9E58-7761D292E9C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alerts.Microservice.Application", "Alerts.Microservice.Application\Alerts.Microservice.Application.csproj", "{660D09EE-4133-4357-9E58-7761D292E9C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alerts.Microservice.Domain", "Alerts.Microservice.Domain\Alerts.Microservice.Domain.csproj", "{61A6A02B-12CA-419E-9850-76E0234E183C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alerts.Microservice.Domain", "Alerts.Microservice.Domain\Alerts.Microservice.Domain.csproj", "{61A6A02B-12CA-419E-9850-76E0234E183C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
