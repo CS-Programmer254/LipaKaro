@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Alerts.Microservice.Domain\Alerts.Microservice.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

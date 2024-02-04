@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD:Helb.Infastracture/HelbMicroService.Infastracture.csproj
     <ProjectReference Include="..\Helb.Domain\HelbMicroService.Domain.csproj" />
+=======
+    <ProjectReference Include="..\AbsaBank.Domain\AbsaBankMicroservice.Domain.csproj" />
+>>>>>>> 16deab7ca8efdfa2d4f856a612f434e1270bf2ed:Absa.Infrastructure/AbsaMicroservice.Infrastructure.csproj
   </ItemGroup>
 
 </Project>
